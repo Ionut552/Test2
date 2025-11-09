@@ -7,10 +7,11 @@ std::ofstream g("testgit.out");
 
 using namespace std;
 
-int a, b;
+int n, ans;
+int a;
 
 int main() {
-    cin >> a >> b;
-    cout << a+b;
-    return 0;
+    cin >> n;
+    for(int i=1;i<=n;i++)cin >> a, ans+=a;
+    cout << ans;
 }
