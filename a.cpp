@@ -8,11 +8,14 @@ std::ofstream g("testgit.out");
 
 using namespace std;
 
-int n, a;
+int n;
+int a[NMAX];
 ll ans;
 
 int main() {
     cin >> n;
-    for(int i=1;i<=n;i++)cin >> a, ans=(ans+a)%mod;
-    cout << ans;
+    for(int i=1;i<=n;i++)cin >> a[i], ans+=a[i];
+    cout << ans << '\n';
+    sort(a+1, a+n+1);
+    for(int i=1;i<=n;i++)cout << a[i] << " ";
 }
