@@ -8,7 +8,7 @@ std::ofstream g("testgit.out");
 using namespace std;
 
 int n, ans;
-int a;
+ll a;
 
 int main() {
     cin >> n;
