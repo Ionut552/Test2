@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 #define NMAX 1005
 #define ll long long
-#define mod 1000009
+#define mod 1000007
 
 std::ifstream f("testgit.in");
 std::ofstream g("testgit.out");
